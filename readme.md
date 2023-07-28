@@ -22,6 +22,7 @@ Step 3: Create deployment using deployment command :
 
 ```shell
 kubectl apply -f Deployment.yaml
+kubectl apply -f Service.yaml
 ```
 
 check deployments using commands
