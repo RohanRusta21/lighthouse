@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lighthouse-deployment
+spec:
+  selector:
+    matchLabels:
+      app: lighthouse
+  template:
+    metadata:
+      labels:
+        app: lighthouse
+    spec:
+      containers:
+        - name: lighthouse
+          image: rohanmaharjan100/lighthouse
+          # ports:
+            # - containerPort: 4000
+          
+
