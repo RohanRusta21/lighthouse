@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,8 +13,9 @@ spec:
     spec:
       containers:
         - name: lighthouse
-          image: rohanmaharjan100/lighthouse
-          # ports:
-            # - containerPort: 4000
+          image: rohanmaharjan100/lighthouse:latest
+          command: ["npx", "get", "--url", "https://facebook.com"]
+          ports:
+            - containerPort: 4000
           
 
