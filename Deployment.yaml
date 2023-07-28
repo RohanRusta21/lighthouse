@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lighthouse
-          image: rohanmaharjan100/lighthouse
+          image: rohanmaharjan100/lighthouse:latest
           ports:
             - containerPort: 4000
           
